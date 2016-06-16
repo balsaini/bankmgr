@@ -10,7 +10,7 @@ describe('Bank', () => {
     });
   });
 
-  describe('addAccount', () => {
+  describe('#addAccount', () => {
     it('create a new account', () => {
       const bk1 = new Bank('Bank1');
       const ac1 = new Account('tester');
@@ -18,7 +18,7 @@ describe('Bank', () => {
       expect(bk1.accounts).to.be.length(1);
     });
   });
-  describe('getValue', () => {
+  describe('#getValue', () => {
     it('get the bank value', () => {
       const bk1 = new Bank('Bank1');
       const ac1 = new Account('tester');
